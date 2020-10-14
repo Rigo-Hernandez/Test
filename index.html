@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- Write your code here! -->
+  <div class="container">
+
+    <form class="login" id="mainform">
+
+      <div class="formHeader">
+        <img src="https://hr.unc.edu/files/2020/04/virus-icon.png" alt="COVID-19 Image virus-icon">
+      </div>
+
+      <h1>COVID-19 Form</h1>
+
+      <p>By Completing this letter, I attest that the answers provided in completing this screening tool and assesment
+        were truthful and complete. I understand the contagious nature of COVID-19 and the risk associated with serioud
+        illness in the elderly. I have completed this screening and will inform the facility administrator or supervisor
+        should i experience any symptoms during my shift or visit inside this facility.</p>
+
+      <p>As a legal record of completing the covid 19 screening i am attesting to the truthfulness and completeness of
+        my
+        answers prior to entry at Woodbridge on 10/11/20.</p>
+
+      <p>Do you swear to tell the truth, the whole truth, and nothing but the truth, so help you God? If so,
+        <label> choose a color: </label>
+      </p>
+
+      <p id="errcolor" class="errmsg" style="display: none">Please select any color</p>
+
+      <div class="select-container">
+
+        <select id="color">
+
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+
+        </select>
+      </div>
+      <p>
+        Type your full name as a legal record of completing COVID-19 screening:
+      </p>
+
+      <input id="fullName" name="fullname" type="text" placeholder="Enter Full Name" />
+
+      <p id="errname" class="errmsg" style="display: none">Please Enter Your Name</p>
+
+      <p>Sign below if you agree</p>
+
+      <div class="wrapper">
+
+        <canvas id="signature-pad" class="signature-pad" width=400 height=50></canvas>
+
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  </div>
+
+  <!-- JavaScript dependencis -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+
+  <!-- Main index Js file -->
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
